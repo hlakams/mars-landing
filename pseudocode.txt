@@ -1,0 +1,2 @@
+def identify_landing(elev: img_map, dci: img_map, temp: img_map) -> identified raster, point, radius:
+    todo
