@@ -1,3 +1,9 @@
+import numpy as np
+from matplotlib import pyplot as plt
+elev_file ="test_data/megt90n000fb.img"
+dust_file = "test_data/dci_lo_ice_dust_16ppd_shifted.raw"
+temp_file = None
+
 def load_elevation(file, size=8):
     with open(file,"rb") as f:
         dat = f.read()
