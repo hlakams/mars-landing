@@ -25,5 +25,7 @@ elev = load_elevation(elev_file)
 dci = load_dci(dust_file)
 temp = load_temp(temp_file)
 
+acceptable_region = (min_elev<elev)&&(elev<max_elev)&&(min_dci<dci)&&(dci<max_dci)&&(max_temp<temp)&&(temp<min_temp)
+
 def identify_landing(elev: img_map, dci: img_map, temp: img_map) -> identified raster, point, radius:
     todo
