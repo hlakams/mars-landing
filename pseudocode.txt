@@ -1,2 +1,23 @@
+def load_elevation(file, size=8):
+    with open(file,"rb") as f:
+        dat = f.read()
+        z=np.frombuffer(dat, dtype='>i2').reshape(720*size,1440*size).astype(np.float64)
+    return z
+
+def load_dci(file):
+    with open(file,"rb") as f:
+        dat = f.read()
+    dci = np.frombuffer(dat,dtype=np.float32).reshape(2880,5760)
+    return dci
+
+def load_temp(file):
+	#TODO
+    temp = None
+    return temp
+
+elev = load_elevation(elev_file)
+dci = load_dci(dust_file)
+temp = load_temp(temp_file)
+
 def identify_landing(elev: img_map, dci: img_map, temp: img_map) -> identified raster, point, radius:
     todo
