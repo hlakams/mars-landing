@@ -131,3 +131,7 @@ dmypy.json
 # our additions
 # remove data folder
 test_data/
+# remove generated figures
+figures/
+# remove generated views
+views/
