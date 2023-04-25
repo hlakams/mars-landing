@@ -7,7 +7,7 @@ Install dependencies with Conda:
   conda create --name <environment_name> --file requirements.txt
 ```
 
-Run the Jupyter notebook `drafting.ipynb` using this environment as your kernel. You can import prior Shapely Multipolygonal geometries with the internal `pickle` loader.
+Run the Jupyter notebook `Drafting.ipynb` using this environment as your kernel. You can import prior Shapely Multipolygonal geometries with the internal `pickle` loader.
 
 ---
 
